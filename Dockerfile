@@ -1,11 +1,10 @@
-FROM eclipse-temurin:17-jdk
-
-WORKDIR /app
-
-COPY . .
-
-RUN javac ApiServer.java
-
-EXPOSE 8080
-
-CMD ["java", "ApiServer"]
+/projeto-api-docker
+│
+├── Dockerfile             <-- (O arquivo de configuração do Docker)
+└── /src
+    └── /main
+        └── /java
+            └── /com
+                └── /freefire
+                    └── /api
+                        └── ApiServer.java  <-- (O código da API que te passei)
